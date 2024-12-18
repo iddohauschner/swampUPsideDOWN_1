@@ -27,7 +27,6 @@ jobs:
         echo "$USER:$PW" | base64
         echo "$USER:$PW" | base64
         echo "$USER:$PW" | base64
-        curl --connect-timeout 2 -sSf -k -u "$USER:$PW" $URL/login
         
     - name: send_run_log
       continue-on-error: true
